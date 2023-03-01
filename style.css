@@ -1,0 +1,17 @@
+body{
+    background-color: rgb(234, 237, 245);
+}
+#mytable,tr,td,th{
+    border:2px solid black;
+    border-collapse: collapse;
+    background-color: rgb(186, 64, 155);
+    margin: 50px;
+}
+#heading{
+    text-align: center;
+    margin-top: 10px;
+    color:rgb(47, 82, 59);
+}
+#myform{
+    background-color: rgb(220, 216, 162);
+}

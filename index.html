@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Form</title>
+</head>
+
+<body>
+    <h3 id="heading">FORM</h3>
+    <form onsubmit="adddata(event)" id="myform" class="m-3 p-5  fw-semibold container d-grid border">
+
+        <div><label for="fname" id="fname" class="col">First Name </label>
+            <input type="text" id="fnametext" name="fname" value="" class="ms-5 mb-3 col-2" required>
+        </div>
+        <div><label for="lname" id="lname" class="col">Last Name </label>
+            <input type="text" id="lnametext" name="lname" value="" class="ms-5 mb-3 col-2" required>
+        </div>
+        <div><label for="gender" id="genderlabel" class="col ">Gender </label>
+            <input type="radio" id="male" name="gender" value="Male" class="ms-5 mb-3 col-1 " required>
+            <label for="male" class="col">Male </label>
+            <input type="radio" id="female" name="gender" value="Female" class="ms-5 mb-3 col-1 " required>
+            <label for="female" class="col">Female</label>
+        </div>
+        <div>
+            <label class="me-5 mb-3" for="address">Address</label>
+            <input type="text" class="ms-3 col-6" id="address" required>
+        </div>
+        <div>
+            <label class="me-5 mb-3" for="pincode">Pincode</label>
+            <input type="text" class="ms-3 col" id="pincode" required>
+        </div>
+        <div>
+            <label class="me-3  mb-3 text-start d-inline-block" style="width:80px" for="state">State</label>
+            <input type="text" class="ms-4 col" id="state" required>
+        </div>
+        <div>
+            <label class="me-5 mb-3" for="country">Country</label>
+            <input type="text" class="ms-3 col" value="" id="country" required>
+        </div>
+        <div>
+            <label class=" mb-3">Choice of Food</label>
+            <input type="checkbox" id="a" name="food" class="mb-3 col-1 food" value="Pizza">
+            <label for="a" class="col">Pizza</label>
+            <input type="checkbox" id="b" name="food" class="mb-3 col-1 food" value="Burger">
+            <label for="b" class="col">Burger</label>
+            <input type="checkbox" id="c" name="food" class="mb-3 col-1 food" value="Nuggets">
+            <label for="c" class="col">Nuggets</label>
+            <input type="checkbox" id="d" name="food" class="mb-3 col-1 food" value="Brownie">
+            <label for="d" class="col">Brownie</label>
+            <input type="checkbox" id="e" name="food" class="mb-3 col-1 food" value="Icecream">
+            <label for="e" class="col">Icecream</label>
+        </div>
+        <div class="text-lg-center mt-5"><button id="btn" class="btn btn-primary">Submit</button></div>
+
+
+    </form>
+
+    <table id="mytable" class="p-3 w-75 text-center ">
+        <thead>
+            <tr>
+                <th  id="ftable">First Name</th>
+                <th >Last Name</th>
+                <th >Address</th>
+                <th >Pincode</th>
+                <th >Gender</th>
+                <th >Food</th>
+                <th >State</th>
+                <th >Country</th>
+            </tr>
+        </thead>
+
+    </table>
+    <script src="./script.js"></script>
+</body>
+
+</html>
